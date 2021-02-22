@@ -511,7 +511,7 @@ body {
   background-color: #fcfefd;
 }
 
-.active {
+.activee {
   border: 5px solid #4ec6ab;
 }
 
@@ -552,7 +552,7 @@ body {
   display: flex;
   flex-direction: row;
   border-radius: 5px;
-  margin-left: 278px;
+  justify-content: center;
 }
 
 .newsletter__form input {
@@ -571,7 +571,6 @@ body {
 
 .newsletter__btn {
   outline: none;
-  border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: #4ec6ab;
@@ -579,7 +578,6 @@ body {
   border: 2px solid #ffffff;
   border-left: none;
 }
-
 
 .pe-7s-next {
   color: #ffffff;
@@ -795,4 +793,376 @@ body {
 
 .footer__rights span {
   color: #46bfa9;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1330px) {
+  .news__items {
+    display: block;
+  }
+
+  .news__item {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .advantages__items,
+  .collection__items,
+  .clothes__items,
+  .partner__items {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 35px 0px;
+  }
+
+  .advantages__item,
+  .collection__item,
+  .clothes__item {
+    margin: 0 auto;
+  }
+
+  .partner__items img {
+    margin: 0 auto;
+  }
+
+  .advantages__logo {
+    margin-bottom: 20px;
+  }
+
+  .collection h1,
+  .products h1,
+  .review h1,
+  .newsletter h1,
+  .partner h1,
+  .news h1,
+  .info h1 {
+    margin-bottom: 70px;
+  }
+
+  .collection h1:before,
+  .products h1:before,
+  .review h1:before,
+  .newsletter h1:before,
+  .partner h1:before,
+  .news h1:before,
+  .info h1:before {
+    display: none;
+  }
+
+  .info__inner {
+    display: block;
+  }
+
+  .info__left {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .info__left-contact {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .info__left-social {
+    justify-content: center;
+  }
+
+  .info__form {
+    display: grid;
+    justify-items: center;
+  }
+  .info__form input {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 880px) {
+  .header__burgerr {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 2;
+  }
+
+  .header__burgerr:before,
+  .header__burgerr:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burgerr:before {
+    top: 0;
+  }
+
+  .header__burgerr:after {
+    bottom: 0;
+  }
+
+  .header__burgerr span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__info-nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 46, 46, 0.9);
+    transition: 0.5s;
+    padding-top: 70px;
+  }
+
+  .header__burgerr.active span {
+    transform: scale(0);
+    transition: 0.3s;
+  }
+
+  .header__burgerr.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burgerr.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burgerr.inactive {
+    z-index: 0;
+  }
+
+  .header__info {
+    display: block;
+    text-align: center;
+  }
+
+  .header__info-nav.active {
+    top: 0;
+  }
+  .header__info li {
+    margin-left: 0px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .header__bottom-cart {
+    display: none;
+  }
+
+  .header__info a {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 830px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 2;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #353232;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    position: absolute;
+    background-color: #353232;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header__burger.actife span {
+    transform: scale(0);
+    transition: 0.3s;
+  }
+
+  .header__burger.actife:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.actife:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.actife:before,
+  .header__burger.actife:after {
+    background-color: #fff;
+  }
+
+  .header__burger.inactive {
+    z-index: -1;
+  }
+
+  .navigation__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 46, 46, 0.9);
+    transition: 0.5s;
+    padding-top: 70px;
+  }
+
+  .navigation__nav.actife {
+    top: 0;
+  }
+
+  .navigation {
+    display: block;
+    text-align: center;
+  }
+
+  .navigation li {
+    margin-bottom: 25px;
+  }
+
+  .navigation li:not(:last-child) {
+    margin-right: 0px;
+  }
+  .navigation a {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .advantages__items {
+    display: block;
+  }
+
+  .clothes {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .clothes li {
+    margin-bottom: 20px;
+  }
+
+  .collection__items,
+  .clothes__items {
+    display: grid;
+    grid-template: 1fr / 1fr;
+  }
+
+  .partner__items {
+    display: grid;
+    grid-template: 1fr / 1fr;
+  }
+
+  .collection__item,
+  .clothes__item {
+    margin: 0 auto;
+  }
+
+  .clothes a {
+    margin-right: 0px;
+  }
+
+  .advantages__item,
+  .advantages__logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .main__inner h1 {
+    font-size: 23px;
+  }
+
+  .contacts {
+    display: block;
+  }
+
+  .contacts li {
+    margin-bottom: 5px;
+  }
+
+  .products h1,
+  .collection h1,
+  .review h1,
+  .sale h1,
+  .sale h2,
+  .newsletter h1,
+  .partner h1,
+  .news h1,
+  .info h1 {
+    font-size: 30px;
+  }
+
+  .newsletter__form input::placeholder {
+    font-size: 15px;
+  }
+
+  .newsletter__form input {
+    padding: 14px 34px 14px 23px;
+    max-width: 251px;
+  }
+
+  .news {
+    padding: 10px;
+  }
+
+  .news__img img {
+    width: 74%;
+  }
+
+  .news h3 {
+    font-size: 15px;
+  }
+
+  .info__form textarea {
+    width: 260px;
+    height: 100px;
+  }
+
+  .info__left h3 {
+    line-height: 22px;
+  }
+
+  .footer__rights span {
+    line-height: 25px;
+  }
 }

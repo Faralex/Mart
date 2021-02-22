@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="header__top">
             <div class="container">
@@ -26,10 +25,12 @@
                         <ul class="contacts">
                             <li><a href="#"><i class='pe-7s-call'></i><span>123-123456789</span></i></a></li>
                             <li><a href="#"><i class='pe-7s-mail'></i><span>info@ltntcom</span></a></li>
-
                         </ul>
                     </nav>
-                    <nav>
+                    <div class="header__burgerr">
+                        <span></span>
+                    </div>
+                    <nav class='header__info-nav'>
                         <ul class="header__info">
                             <li><a href="#">My Account</a></li>
                             <li><a href="#">WishList</a></li>
@@ -47,7 +48,8 @@
                     <div class="logo">
                         <img src="./img/logo.png" alt="logo">
                     </div>
-                    <nav>
+                   
+                    <nav class="navigation__nav">
                         <ul class="navigation">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
@@ -59,6 +61,9 @@
                     </nav>
                     <div class="header__bottom-cart">
                         CART-$0
+                    </div>
+                    <div class="header__burger">
+                        <span></span>
                     </div>
                 </div>
             </div>
@@ -369,7 +374,7 @@
                 <nav>
                     <ul class="images">
                         <li><a class='review__image first__img' href="#"></a></li>
-                        <li><a class='review__image active second__img' href="#"></a></li>
+                        <li><a class='review__image activee second__img' href="#"></a></li>
                         <li><a class='review__image third__img' href="#"></a></li>
                     </ul>
                 </nav>
@@ -473,8 +478,9 @@
                         <input type="text" placeholder="Subject">
                         <input type="text" placeholder="Website">
                         <textarea cols="61" rows="6" placeholder="Your message"></textarea>
+                        <button class='form__btn'>SEND</button>
                     </form>
-                    <button class='form__btn'>SEND</button>
+                    
                 </div>
             </div>
         </div>
@@ -488,6 +494,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
